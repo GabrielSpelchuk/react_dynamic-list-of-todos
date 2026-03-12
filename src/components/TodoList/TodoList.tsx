@@ -5,7 +5,7 @@ import classNames from 'classnames';
 interface TodosList {
   todos: Todo[];
   selectedTodo: Todo | null;
-  setSelectedTodo: (todo: Todo) => void;
+  setSelectedTodo: (todo: Todo | null) => void;
 }
 
 export const TodoList: React.FC<TodosList> = ({

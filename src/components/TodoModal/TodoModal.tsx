@@ -30,7 +30,7 @@ export const TodoModal: React.FC<ISelectedTodo> = ({
           setUser(data);
         }
       } catch {
-        throw new Error('User nit found');
+        setUser(null);
       } finally {
         setLoading(false);
       }
